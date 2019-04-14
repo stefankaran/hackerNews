@@ -1,0 +1,28 @@
+@import "../../../styles/variables/colors";
+
+.Error {
+	text-align: center;
+	margin-top: 5rem;
+
+	&__message {
+		font-size: 2.2rem;
+		color: $c-black;
+		margin-bottom: 2rem;
+	}
+
+	&__button {
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		background-color: $c-brand-main;
+		border: 1px solid $c-brand-main;
+		color: $c-white;
+		padding: 2rem 3.5rem;
+		transition: .3s;
+
+		&:hover {
+			background-color: $c-white;
+			color: $c-brand-main;
+		}
+	}
+
+}

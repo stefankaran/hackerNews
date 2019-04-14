@@ -1,0 +1,13 @@
+@import "./breakpoints";
+
+.l {
+	max-width: 1440px;
+	margin: auto;
+	padding-left: 2rem;
+	padding-right: 2rem;
+
+	@include breakpoint(phone) {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	};
+}

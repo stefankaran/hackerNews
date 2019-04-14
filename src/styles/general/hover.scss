@@ -1,0 +1,21 @@
+@import "../variables/colors";
+@import "../variables/animations";
+@import "./breakpoints";
+
+.hoverEffectLinkPrimary {
+	@include breakpoint(overPhone) {
+		transition: $defaultDuration;
+		&:hover {
+			color: $c-brand-main;
+		}
+	}
+}
+
+.hoverEffectLinkSecondary {
+	@include breakpoint(overPhone) {
+		transition: $defaultDuration;
+		&:hover {
+			color: $c-white;
+		}
+	}
+}

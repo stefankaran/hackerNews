@@ -1,0 +1,77 @@
+@import "../../../styles/variables/colors";
+@import "../../../styles/general/breakpoints";
+@import "../../../styles/general/hover";
+
+.NewsSingle {
+	display: flex;
+	border-bottom: 1px solid $c-gray-dark;
+	color: $c-black;
+	padding: 1.8rem 1.3rem 1.2rem;
+
+	@include breakpoint(phone) {
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	&Link {
+		color: $c-black;
+		@extend .hoverEffectLinkPrimary;
+	}
+
+	&Index {
+		font-size: 1.7rem;
+		min-width: 2rem;
+		color: $c-gray-dark;
+		margin: .3rem 1rem 0 0;
+
+		@include breakpoint(phone) {
+			min-width: 3.5rem;
+		}
+	}
+
+	&Header {
+		margin-bottom: 1rem;
+	}
+
+	&Title {
+		font-size: 1.8rem;
+		line-height: 2.4rem;
+
+		@include breakpoint(phone) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&Url {
+		display: inline-block;
+		vertical-align: middle;
+		max-width: 25rem;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		color: $c-gray-dark;
+	}
+
+	&Footer {
+		display: flex;
+		font-size: 1.4rem;
+
+		@include breakpoint(phone) {
+			flex-direction: column;
+			align-items: flex-start
+		}
+	}
+
+	&FooterItem {
+		margin-right: .3rem;
+
+		@include breakpoint(phone) {
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	&ColorSecondary {
+		color: $c-gray-dark;
+	}
+}

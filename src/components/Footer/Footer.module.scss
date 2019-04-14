@@ -1,0 +1,10 @@
+@import "../../styles/variables/colors";
+
+.Footer {
+	position: absolute;
+	bottom: 1rem;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: $c-brand-main;
+}

@@ -1,0 +1,40 @@
+@import '../variables/colors';
+
+html,
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 10px; // 1rem === 10px; ex 2.2rem === 22px;
+	box-sizing: border-box;
+	height: 100%;
+	background-color: $c-gray-light;
+
+	* {
+		box-sizing: border-box;
+	}
+}
+
+main {
+	padding-top: 6rem; // header height
+}
+
+h1,
+h2,
+h3 {
+	font-weight: normal;
+}
+
+a,
+button,
+input[type="button"],
+input[type="submit"],
+textarea {
+	display: inline-block;
+	text-decoration: none;
+	outline: none;
+	border: none;
+	background: transparent;
+}
+
+button, a {
+	cursor: pointer;
+}

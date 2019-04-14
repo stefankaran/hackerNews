@@ -1,0 +1,11 @@
+@import "../../../styles/variables/colors";
+
+.NewsSingleError {
+	padding: 1.3rem;
+	border-bottom: 1px solid $c-gray-dark;
+	color: $c-black;
+
+	&Message {
+		font-size: 1.5rem;
+	}
+}
